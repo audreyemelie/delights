@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audrey's Sweet Delights</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Preparing Your Sweet Delights...</p>
+    </div>
+
+    <div id="main-content">
+        <header>
+            <div class="container">
+                <div class="logo">Audrey's Sweet Delights</div>
+                <nav id="nav-menu">
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#specials">Specials</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#ratings">Ratings</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </header>
+
+        <section id="hero" class="decorative-bg">
+            <div class="hero-content">
+                <h1>Welcome to Audrey's Sweet Delights</h1>
+                <p class="motto">Filling your taste buds with joy</p>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </section>
+
+        <section id="specials" class="section-padding">
+            <div class="container">
+                <h2>👑 Today's Very Exclusive Special Offers 👑</h2>
+                <p class="special-note">Experience luxury with our discounted top-tier treats.</p>
+                
+                <div class="specials-grid">
+                    <div class="special-card">
+                        <h3>10% Off Exclusive Treats!</h3>
+                        <p>Enjoy **10% OFF** when you order any item from our top-tier Ice Creams, Milkshakes, Cakes, and Burgers.</p>
+                        <p class="price-old">N70,000</p>
+                        <p class="price-new">N63,000 (after 10% discount)</p>
+                        <button class="order-btn">Add to Order</button>
+                    </div>
+
+                    <div class="special-card special-unicorn">
+                        <h3>🦄 Unicorn Dream Ice Cream 🦄</h3>
+                        <p>Our magical, multi-layered Unicorn Ice Cream is a **must-try!**</p>
+                        <p>Price: N15,000</p>
+                        <button class="order-btn">Add to Order</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section-padding decorative-bg-reverse">
+            <div class="container">
+                <h2>🍦 Our Very Expensive Menu 🍔</h2>
+                <p class="menu-note">Indulge in our exquisite and high-priced selection of gourmet delights.</p>
+                
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="icecream">Ice Creams</button>
+                    <button class="tab-btn" data-category="milkshakes">Milkshakes</button>
+                    <button class="tab-btn" data-category="cakes">Cakes</button>
+                    <button class="tab-btn" data-category="burgers">Burgers</button>
+                </div>
+
+                <div class="menu-content">
+                    <div id="icecream" class="menu-list active">
+                        </div>
+                    <div id="milkshakes" class="menu-list">
+                        </div>
+                    <div id="cakes" class="menu-list">
+                        </div>
+                    <div id="burgers" class="menu-list">
+                        </div>
+                </div>
+            </div>
+        </section>
+
+      
+              <section id="order" class="section-padding">
+            <div class="container">
+                <h2>🛒 Place Your Exclusive Order</h2>
+                
+                <div class="cart-container">
+                    
+                    <div class="cart-display">
+                        <h3>Your Luxury Cart</h3>
+                        <div id="cart-items">
+                            <p class="empty-cart-message">Your cart is empty. Start adding some delights!</p>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary">
+                        <h3>Order Summary</h3>
+                        
+                        <div class="summary-line">
+                            <span>Subtotal:</span>
+                            <span id="subtotal-price">₦0</span>
+                        </div>
+                        <div class="summary-line special-discount-line">
+                            <span>Special Offer Discount (10%):</span>
+                            <span id="discount-price">- ₦0</span>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="summary-line total-line">
+                            <span>**TOTAL:**</span>
+                            <span id="total-price">**₦0**</span>
+                        </div>
+
+                        <button id="checkout-btn" class="btn" disabled>Proceed to Checkout</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="ratings" class="section-padding decorative-bg">
+            <div class="container">
+                <h2>🌟 Ratings and Customer Delights</h2>
+                <div class="ratings-placeholder">
+                    <h3>Leave Your Review</h3>
+                    <form>
+                        <input type="text" placeholder="Your Name" required><br>
+                        <textarea placeholder="Your Comment..." rows="4" required></textarea><br>
+                        <div class="rating-stars">
+                            <label>Rating:</label>
+                            <span class="star" data-value="5">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="3">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="1">★</span>
+                        </div>
+                        <button type="submit" class="btn">Submit Review</button>
+                    </form>
+                    
+                    <h3>What Our Customers Say:</h3>
+                    <div class="comment-box">
+                        <p class="comment-text">"Absolutely divine! The Unicorn Ice Cream is worth every Naira."</p>
+                        <p class="comment-author">- Audrey's #1 Fan (★★★★★)Engr. Nkem</p>
+                    </div>
+                    <div class="comment-box">
+                        <p class="comment-text">"I wish I could go to Audrey's Delights everyday. It's so worth it"</p>
+                        <p class="comment-author">- Audrey's #2 Fan (★★★★)Barr Nneka</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container" id="contact">
+                <p>&copy; 2025 Audrey's Sweet Delights. All Rights Reserved. | Contact: <a href="mailto:audreyemelie@gmail.com">audreysdelights.com</a></p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
